@@ -1,133 +1,81 @@
-
-:root {
-  --primary: #c5cad3;
-  --background: #282c33;
-  --background-darker: #1c1f23;
-}
-
-html[data-theme='min-one-dark'] {
-    --font-body: 'Raleway', 'Helevetica Neue', monospace;
-    --font-headings: 'Raleway', 'Helvetica Neue', monospace;
-    --footer-height: 94px    
+  //based off of the built-in Adventure theme  
+  html[data-theme="mindark"] {
+    // Main colors
     --primary: #c5cad3;
     --background: #282c33;
     --background-darker: #1c1f23;
-    --info: #04e4f4;
-    --success: #20e253;
-    --warning: #f6f000;
-    --error: #fca016;
-    --danger: #f80363;
-    --neutral: #272f4d;
-    --white: #fff;
-    --black: #000;
-    --item-group-background: none;
-    --medium-grey: #5e6474;
-    --item-background: #1c1f23;
-    --item-background-hover: #1c1f23;
-    --transparent-70: rgba(0,0,0,0.7019607843137254);
-    --transparent-50: rgba(0,0,0,0.5019607843137255);
-    --transparent-30: rgba(0,0,0,0.30196078431372547);
-    --transparent-white-70: hsla(0,0%,100%,0.7019607843137254);
-    --transparent-white-50: hsla(0,0%,100%,0.5019607843137255);
-    --transparent-white-30: hsla(0,0%,100%,0.30196078431372547);
-    --heading-text-color: #c5cad3;
-    --nav-link-text-color: #c5cad3;
-    --nav-link-background-color: #282c33;
-    --nav-link-text-color-hover: #c5cad3;
-    --nav-link-background-color-hover: #282c33;
-    --nav-link-border-color: transparent;
-    --nav-link-border-color-hover: transparent;
-    --nav-link-shadow: 4px 4px 0px #1c1f23,-3px 0px 0px #c5cad3,2px 2px 6px #000;
-    --nav-link-shadow-hover: 6px 6px 0px #1c1f23,-4px 0px 0px #c5cad3,2px 2px 9px #000;
-    --item-text-color: #c5cad3;
-    --item-text-color-hover: #c5cad3;
-    --item-group-outer-background: none;
-    --item-group-heading-text-color: #fff;
-    --item-group-heading-text-color-hover: #c5cad3;
-    --settings-text-color: #c5cad3;
-    --settings-background: #282c33;
-    --config-settings-color: #c5cad3;
-    --config-settings-background: #1c1f23;
-    --config-code-color: #282c33;
-    --config-code-background: #fff;
-    --code-editor-color: #000;
-    --code-editor-background: #fff;
-    --widget-text-color: #c5cad3;
-    --widget-background-color: #1c1f23;
-    --widget-accent-color: #282c33;
-    --widget-base-background: transparent;
-    --interactive-editor-color: #c5cad3;
-    --interactive-editor-background: #282c33;
-    --interactive-editor-background-darker: #1c1f23;
-    --cloud-backup-color: #c5cad3;
-    --cloud-backup-background: #1c1f23;
-    --search-container-background: #1c1f23;
-    --search-field-background: #282c33;
-    --search-label-color: #c5cad3;
-    --footer-text-color: #5e6474;
-    --footer-text-color-link: #c5cad3;
-    --footer-background: #1c1f23;
-    --context-menu-background: #282c33;
-    --context-menu-color: #c5cad3;
-    --context-menu-secondary-color: #1c1f23;
-    --side-bar-background: #1c1f23;
-    --side-bar-background-lighter: #282c33;
-    --side-bar-color: #c5cad3;
-    --side-bar-item-background: #1c1f23;
-    --side-bar-item-color: #c5cad3;
-    --workspace-web-content-background: #282c33;
-    --minimal-view-background-color: #282c33;
-    --minimal-view-title-color: #c5cad3;
-    --minimal-view-settings-color: #c5cad3;
-    --minimal-view-section-heading-color: #c5cad3;
-    --minimal-view-section-heading-background: #1c1f23;
-    --minimal-view-search-background: #1c1f23;
-    --minimal-view-search-color: #c5cad3;
-    --minimal-view-group-color: #c5cad3;
-    --minimal-view-group-background: #1c1f23;
-    --login-form-color: #c5cad3;
-    --login-form-background: #282c33;
-    --login-form-background-secondary: #1c1f23;
-    --about-page-color: #fff;
-    --about-page-background: #282c33;
-    --about-page-accent: #c5cad3;
-    --scroll-bar-color: #c5cad3;
-    --scroll-bar-background: #1c1f23;
-    --highlight-color: #282c33;
-    --highlight-background: #c5cad3;
-    --progress-bar: #c5cad3;
-    --loading-screen-color: #c5cad3;
-    --loading-screen-background: #282c33;
-    --status-check-tooltip-background: #1c1f23;
-    --status-check-tooltip-color: #c5cad3;
-    --welcome-popup-background: #1c1f23;
-    --welcome-popup-text-color: #c5cad3;
-    --toast-background: #c5cad3;
-    --toast-color: #282c33;
-    --description-tooltip-background: #1c1f23;
-    --description-tooltip-color: #c5cad3;
-    --outline-color: none;
-    --curve-factor: 4px;
-    --curve-factor-navbar: 6px;
-    --curve-factor-small: 2px;
-    --dimming-factor: 0.7;
-    --scroll-bar-width: 8px;
-    --header-height: 6.3rem;
-    --footer-height: 128px;
-    --item-group-padding: 5px;
-    --item-shadow: 4px 4px 0px #1c1f23,-3px 0px 0px #c5cad3,2px 2px 6px #000;
-    --item-hover-shadow: 6px 6px 0px #1c1f23,-5px 0px 0px #c5cad3,2px 2px 9px #000;
-    --item-icon-transform: drop-shadow(2px 4px 6px rgba(0,0,0,0.5019607843137255)) saturate(0.95);
-    --item-icon-transform-hover: drop-shadow(4px 8px 3px rgba(0,0,0,0.5019607843137255)) saturate(2);
+   
+    // Typography
+    --font-headings: 'Helvetica Neue', 'Ariel', 'sans-serif';
+    --font-body: 'Helvetica Neue', 'Ariel', 'sans-serif';
+   
+    // Items
+    --item-background: var(--background-darker-transparent);
+    --item-background-hover: var(--background-grey-transparent);
+    --item-shadow: 1px 1px 2px #130f23;
+    --item-hover-shadow: 2px 2px 4px #130f23;
+   
+    // Sections
+    --item-group-heading-text-color: var(--white);
+    --item-group-heading-text-color-hover: var(--primary);
     --item-group-shadow: none;
-    --context-menu-shadow: 4px 4px 0px #1c1f23,-3px 0px 0px #c5cad3,2px 2px 6px #000;
-    --section-max-height: 3000px;
-    --settings-container-shadow: none;
-    --side-bar-width: 3.5rem;
-    --tooltip-arrow-size: 6px;
-    --tooltip-width: 250px;
-    --tooltip-padding: 0.2rem;
-    --font-body: "Roboto",serif;
-    --font-headings: "Podkova","Roboto",serif;
-    --font-monospace: "PTMono","Courier New",monospace;
-}
+    --item-group-background: none;
+    --item-group-outer-background: none;
+   
+    // Remove background from certain components
+    div.home, div.options-outer, div.options-container, section.filter-container,
+    section.settings-outer, div.show-hide-container.hide-btn, div.show-hide-container.show-btn  {
+      background: none;
+    }
+   
+    // Style overides
+    label.lbl-toggle h3 { font-size: 1.3rem; font-weight: bold; }
+    .content-inner { border-top: 1px dashed var(--primary); }
+    .item.size-large .tile-title p.description { height: 3rem; }
+    .is-collapsed {
+      background: var(--item-background);
+      box-shadow: var(--item-shadow);
+      &:hover {
+        background: var(--item-background-hover);
+        box-shadow: var(--item-hover-shadow);
+      }
+    }    
+   
+    // Background Image
+    body {
+      //update the query terms after the '?', to customize for images you want
+      background: url('https://source.unsplash.com/random/1920x1080/?dark,calm,nature,background');
+      background-color: var(--background-darker);
+      background-size: cover;      
+    }
+    header, footer, form.normal { background-color: var(--background-darker-transparent); } 
+
+    // section spacing adjustments
+    .collapsable { margin: 0; }
+
+    // large tile spacing adjustment
+    .there-are-items:has(.item-wrapper.wrap-size-large) { padding-top: .25rem; }
+    .item-wrapper.wrap-size-large { margin: 0rem .5rem .5rem 0rem; }
+    .item.size-large .tile-title { padding: 0rem 0rem 0rem .7rem; }
+
+    // Hide open method icon
+    .opening-method-icon { opacity: 0; }
+    
+    // Widget tile style
+    .widget-base {
+      background-color: var(--background-darker-transparent);
+      margin: .5rem .5rem 1rem .5rem;
+      padding: 0;
+      border: 1px solid var(--outline-color);
+      border-radius: var(--curve-factor);
+      box-shadow: var(--item-shadow);
+    }
+    .widget-base button.action-btn { margin-top: .3rem; margin-right: .5rem; }
+    .widget-wrap { padding: 1.4rem .8rem .8rem .8rem; }
+    
+    // Grow effect for tile-icon <img> & <i> on hover over Item tiles
+    .item:hover .item-icon img, .item:hover .item-icon i{
+      transition: all .35s ease-in-out;
+      transform: scale(1.22);  
+    }
+  }
